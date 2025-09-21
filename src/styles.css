@@ -1,0 +1,51 @@
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-2: #6b7280;
+  --primary: #3b82f6;
+  --primary-2: #2563eb;
+  --success: #10b981;
+  --success-2: #059669;
+  --warning: #f59e0b;
+  --warning-2: #d97706;
+  --danger: #ef4444;
+  --danger-2: #b91c1c;
+}
+
+.container{max-width:1200px;margin:0 auto;padding:16px}
+.flex{display:flex}
+.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.gap-8{gap:8px}
+.gap-16{gap:16px}
+.wrap{flex-wrap:wrap}
+.grid{display:grid}
+.grid-12{grid-template-columns:repeat(12,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px}
+.card-pad{padding:16px}
+.btn{border:none;border-radius:8px;color:#fff;cursor:pointer;font-size:14px;padding:10px 16px}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2))}
+.btn-success{background:linear-gradient(135deg,var(--success),var(--success-2))}
+.btn-warning{background:linear-gradient(135deg,var(--warning),var(--warning-2))}
+.btn-danger{background:linear-gradient(135deg,var(--danger),var(--danger-2))}
+.btn:hover{filter:brightness(1.02);transform:translateY(-1px);transition:all .15s ease}
+.input{padding:8px;border:1px solid var(--border);border-radius:6px;font-size:14px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:14px;border-bottom:1px solid var(--border);text-align:left;font-size:14px}
+.table thead{background:#fafafa;position:sticky;top:0;z-index:1}
+.table tbody tr:hover{background:#f9fafb}
+.badge{padding:6px 10px;border-radius:9999px;border:1px solid var(--border);font-size:12px}
+.chip{padding:8px 12px;border-radius:9999px;border:1px solid var(--border);font-size:12px;background:var(--bg);cursor:pointer}
+.chip--selected{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border-color:transparent}
+
+body{background:var(--bg);color:var(--text)}
+.small{font-size:12px;color:var(--text-2)}
+.h1{font-size:24px;font-weight:700}
+.h3{font-size:18px;font-weight:700}
+.mb-24{margin-bottom:24px}
+.mb-20{margin-bottom:20px}
+.mt-12{margin-top:12px}
+.mt-20{margin-top:20px}
